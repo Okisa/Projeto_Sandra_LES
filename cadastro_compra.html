@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="charset=UTF-8">
+  		<title>Cadastrar Compra</title>
+  		<link rel="stylesheet" type="text/css" href="css/form.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="js/validacao.js"></script>
+	</head>
+	<body>
+		<header>
+		</header>
+		<div class="container">
+		<form action="envia.php" method="post" name="formulario"  onSubmit="return valida();">
+			<h5>Cadastrar Compra</h5>
+			<div class="form-group">
+				<div class="org">
+					<label for="fornecedorCompra" class="rotulo">
+						<h2>Fornecedor:</h2>
+					</label>
+					<select name="fornecedorCompra" class="tamanho">
+					</select>
+				</div>
+				<div class="org">
+					<label for="produtoCompra" class="rotulo">
+						<h2>Produto:</h2>
+					</label>
+					<select name="produtoCompra" class="tamanho">
+					</select>
+				</div>
+				<div class="org">
+						<label for = "qtdCompra" class="rotulo"> <h2>Quantidade:</h2></label>
+						<input type="text" name="qtdCompra" class="tamanho3" placeholder="Qtd produto"/>
+						<label for = "valorCompra" class="rotulo"> <h2>Valor total:</h2></label>
+						<input type="text" name="qtdProduto" class="tamanho3" placeholder="Valor total da compra"/>
+						<label for = "dataCompra" class="rotulo2"> <h2>Data:</h2></label>
+						<input type="date" name="qdataProduto" style="width:130px;" placeholder="xx/xx/xx"/>
+						
+				</div>
+			</div>
+			<input type="submit" onclick="return validaRadio();">
+
+		</form>
+	</body>
+</html> 

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="charset=UTF-8">
+  		<title>Cadastrar Produto</title>
+  		<link rel="stylesheet" type="text/css" href="css/form.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="js/validacao.js"></script>
+	</head>
+	<body>
+		<header>
+		</header>
+		<div class="container">
+		<form action="envia.php" method="post" name="formulario"  onSubmit="return valida();">
+			<h5>Cadastrar Produto</h5>
+			<div class="form-group">
+				<div class="org">
+					<label for="fornecedorProduto" class="rotulo">
+						<h2>Fornecedor:</h2>
+					</label>
+					<select name="fornecedorProduto" class="tamanho">
+					</select>
+				</div>
+				<div class="org">
+						<label for="produtoProduto" class="rotulo"><h2>Produto:</h2></label>
+						<input type="text" name="produtoProduto" style="width:290px;" placeholder="Nome do produto"/>
+						<label for = "qtdProduto" class="rotulo2"> <h2>Quantidade:</h2></label>
+						<input type="text" name="qtdProduto" style="width:110px; margin-left:20px;"placeholder="Qtd produto"/>
+						<label for = "precoProduto" class="rotulo2"> <h2>Preço:</h2></label>
+						<input type="text" name="precoProduto" style="width:110px; margin-left:-20px;"placeholder="Preço unidade"/>
+				</div>
+			</div>
+			<input type="submit" onclick="return validaRadio();">
+
+		</form>
+	</body>
+</html> 

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="charset=UTF-8">
+  		<title>Cadastrar Fornecedor</title>
+  		<link rel="stylesheet" type="text/css" href="css/form.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="js/validacao.js"></script>
+	</head>
+	<body>
+		<header>
+		</header>
+		<div class="container">
+		<form action="envia.php" method="post" name="formulario"  onSubmit="return valida();">
+			<h5>Cadastrar Fornecedor</h5>
+			<div class="form-group">
+				<div class="org">
+					<label for="nomeFornecedor" class="rotulo">
+						<h2>Nome:</h2>
+					</label>
+					<input type="text" name="nomeFornecedor" class="tamanho" placeholder="Nome da empresa fornecedora" onkeyup="mascaraLetra(this);">
+				</div>
+				<div class="org">
+					<label for="nomecontatoFornecedor" class="rotulo">
+						<h2>Nome contato:</h2>
+					</label>
+					<input type="text" name="nomecontatoFornecedor" class="tamanho" placeholder="Nome do funcionário para contato" onkeyup="mascaraLetra(this);">
+				</div>
+				<div class="org">
+					<label for="enderecoFornecedor" class="rotulo">
+						<h2>Endereço</h2>
+					</label>
+					<input type="text" name="enderecoFornecedor" class="tamanho" placeholder="Endereço da empresa fornecedora" onkeyup="mascaraLetra(this);">
+				</div>
+				<div class="org">
+						<label for="complementoFornecedor" class="rotulo"><h2>Complemento:</h2></label>
+						<input type="text" name="complementoFornecedor" class="tamanho2" placeholder="Complemento do cliente"/>
+						<label for = "cnpjFornecedor" class="rotulo2"> <h2>CNPJ:</h2></label>
+						<input type="text" name="cnpjFornecedor" class="tamanho2" placeholder="CNPJ empresa fornecedora"/>
+				</div>
+				<div class="org">
+					<label for="telefoneFornecedor" class="rotulo"><h2>Telefone: </h2></label>
+					<input type="text" name="telefoneFornecedor" class="tamanho2" placeholder="(xx)xxxx-xxxx" maxlength="14" onkeyup="mascaraTel(this);"/>
+					<label for="emailFornecedor" class="rotulo2"><h2>E-mail: </h2></label>
+					<input type="text" name="emailFornecedor" class="tamanho2" placeholder="E-mail do cliente"/>					
+				</div>		
+			</div>
+			<input type="submit" onclick="return validaRadio();">
+
+		</form>
+	</body>
+</html> 

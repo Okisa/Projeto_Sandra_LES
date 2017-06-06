@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="charset=UTF-8">
+  		<title>Cadastrar Cliente</title>
+  		<link rel="stylesheet" type="text/css" href="css/form.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="js/validacao.js"></script>
+	</head>
+	<body>
+		<header>
+		</header>
+		<div class="container">
+		<form action="envia.php" method="post" name="formulario"  onSubmit="return valida();">
+			<h5>Cadastrar Cliente</h5>
+			<div class="form-group">
+				<div class="org">
+					<label for="nome" class="rotulo">
+						<h2>Nome:</h2>
+					</label>
+					<input type="text" name="nome" class="tamanho" placeholder="Nome do cliente" onkeyup="mascaraLetra(this);">
+				</div>
+				<div class="org">
+					<label for="endereco" class="rotulo">
+						<h2>Endereço:</h2>
+					</label>
+					<input type="text" name="endereco" class="tamanho" placeholder="Endereço do cliente" onkeyup="mascaraLetra(this);">
+				</div>
+				<div class="org">
+						<label for="complemento" class="rotulo"><h2>Complemento:</h2></label>
+						<input type="text" name="complemento" class="tamanho2" placeholder="Complemento do cliente"/>
+						<label for = "cpf" class="rotulo2"> <h2>CPF:</h2></label>
+						<input type="text" name="cpf" class="tamanho2" placeholder="CPF"/>
+				</div>
+				<div class="org">
+					<label for="datanasc" class="rotulo"><h2>Data de Nascimento</h2></label>
+					<input type="date" name="datanasc" class="tamanho3" placeholder="xx/xx/xx" maxlength="8"/>
+					<label for="telefone1" class="rotulo2"><h2>Telefone: </h2></label>
+					<input type="text" name="telefone1" class="tamanho3" placeholder="(xx)xxxx-xxxx" maxlength="14" onkeyup="mascaraTel(this);"/>
+					<label for="telefone2" class="rotulo2"><h2>Telefone 2: </h2></label>
+					<input type="text" name="telefone2" class="tamanho3"  placeholder="(xx) xxxx-xxxx" maxlength="14" onkeyup="mascaraTel(this);"/>					
+				</div>
+				<div class="org">
+						<label for="email1" class="rotulo"><h2>E-mail 1: </h2></label>
+						<input type="text" name="email1" class="tamanho2" placeholder="E-mail do cliente"/>
+						<label for="email2" class="rotulo2"><h2>E-mail 2: </h2></label>
+						<input type="text" name="email2" class="tamanho2" placeholder="E-mail do cliente"/>
+				</div>			
+			</div>
+			<input type="submit" onclick="return validaRadio();">
+
+		</form>
+	</body>
+</html> 
